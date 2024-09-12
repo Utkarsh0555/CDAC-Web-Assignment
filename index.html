@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login_form">
+    <!-- Login form container -->
+    <form id="loginForm">
+      <h3>Log in</h3>
+
+      <!-- Email input box -->
+      <div class="input_box">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email address" required />
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <!-- Password input box -->
+      <div class="input_box">
+        <div class="password_title">
+          <label for="password">Password</label>
+        </div>
+        <input type="password" id="password" placeholder="Enter your password" required />
+        <span class="error" id="passwordError"></span>
+        <a href="#">Forgot Password?</a>
+        <div class="password_toggle">
+          <input type="checkbox" id="showPassword"> Show Password
+        </div>
+      </div>
+
+      <!-- Remember me checkbox -->
+      <div class="input_box">
+        <input type="checkbox" id="rememberMe"> Remember Me
+      </div>
+
+      <!-- Loading spinner -->
+      <div class="spinner" id="spinner"></div>
+
+      <!-- Login button -->
+      <button type="submit">Log In</button>
+
+      <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p>
+
+      <!-- API response message -->
+      <p id="apiMessage" class="api_message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
